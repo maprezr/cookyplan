@@ -1,9 +1,11 @@
 import './App.css'
+import { DailyRecipe } from './assets/components/DailyRecipe/DailyRecipe'
+
 
 function App() {
   return (
     <>
-      <h1>cookyplan</h1>
+      <DailyRecipe/>
     </>
   )
 }

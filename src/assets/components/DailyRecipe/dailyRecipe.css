@@ -1,0 +1,11 @@
+.card{
+width: 70%;
+max-height: 1500px;
+border: 1px, solid !important;
+}
+
+img{
+    border: 3px, solid !important;
+    border-radius: 20px;
+
+}
