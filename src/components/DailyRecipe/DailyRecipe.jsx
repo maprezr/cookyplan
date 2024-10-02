@@ -8,7 +8,7 @@ export const DailyRecipe = () => {
                 <div className="card mt-5">
                     <div className="row">
                         <div className="col-5 text-center">
-                            <h3 >Bandeja Paisa</h3>
+                            <h3 >Bandeja Paisa...</h3>
                             <img src="src\assets\images\bandeja paisa.jfif" alt="" />
                         </div>
                         <div className="col-7 px-5">
