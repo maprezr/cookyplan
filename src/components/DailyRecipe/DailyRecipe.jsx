@@ -5,7 +5,7 @@ import style from '../DailyRecipe/dailyRecipe.module.css';
 export const DailyRecipe = (recipes) => {
     console.log(recipes)
     return (
-        <div className="container d-flex justify-content-center p-5">
+        <div className="container d-flex justify-content-center p-5 ">
             <Carousel data-bs-theme="dark" className={style.carousel_custom}>
                 {recipes.recipes.map((recipe, index) => (
                     <Carousel.Item key={index}>

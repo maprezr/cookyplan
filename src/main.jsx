@@ -4,9 +4,9 @@ import './index.css'
 import { Layout } from './components/Layout/Layout.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import RecipeForm from './components/FormRecipe/RecipeForm.jsx';
-import { Main } from './pages/Main.jsx';
-
+import FormRecipe from './components/FormRecipe/RecipeForm.jsx';
+import Cards from './components/Cards/Cards.jsx';
+import { Main } from './pages/Main.jsx'
 
 
 const router = createBrowserRouter([
@@ -16,7 +16,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "add_recipe",
-        element: <RecipeForm />,
+        element: <FormRecipe />,
+      },
+      {
+        path: "cards",
+        element: <Cards />,
       },
       {
         path: "main",
@@ -25,7 +29,6 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../Header/Header'
-import { Outlet } from 'react-router-dom'
 import MyLogin from '../Login/Login'
+import { Outlet } from 'react-router-dom'
 import { Footer } from '../Footer/Footer'
 
 
@@ -10,7 +10,7 @@ export const Layout = () => {
     <>
       <Header />
       <MyLogin />
-      <div id="detail" class='m-5 card'>
+      <div id="detail" className='mt-2'>
         <Outlet />
       </div>
       <Footer />
