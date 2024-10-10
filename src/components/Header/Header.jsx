@@ -1,10 +1,10 @@
 // Header.js
 import 'react';
 import { Navbar, Nav, Form, Button } from 'react-bootstrap';
-import logo from '../../assets/images/imagesHeader/logo.png';
-import icono_inicio from '../../assets/images/imagesHeader/inicio.svg';
-import icono_contacto from '../../assets/images/imagesHeader/contactos.svg';
-import icono_servicios from '../../assets/images/imagesHeader/servicios.svg';
+import logo from '../../assets/images/ImagesHeader/logo.png';
+import icono_inicio from '../../assets/images/ImagesHeader/inicio.svg';
+import icono_contacto from '../../assets/images/ImagesHeader/contactos.svg';
+import icono_servicios from '../../assets/images/ImagesHeader/servicios.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import stylesHeaderyLogin from '../Header/HeaderyLogin.module.css';
 import { Link } from 'react-router-dom';

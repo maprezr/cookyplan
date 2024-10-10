@@ -1,6 +1,6 @@
 import React from 'react'
 import { DailyRecipe } from '../components/DailyRecipe/DailyRecipe'
-import data from '../../dailyRecipes.json'
+import data from '../../data/dailyRecipes.json'
 import Cards from '../components/Cards/Cards'
 
 export const Main = () => {

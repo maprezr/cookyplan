@@ -1,27 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import stylesCards from '../Cards/Cards.module.css';
-import imgCard from '../../assets/images/imagesHeader/BandejaPaisa.png';
-
-/*
-  function Cards({ header, title, text, buttonText, imgSrc }) {
-    return (
-      <Card className={stylesCards.customCard}>
-          <Card.Header className={stylesCards.customTitle}>{header}</Card.Header>
-  
-          <Card.Img variant="top" src={imgSrc || logo} 
-              className={stylesCards.customCard_img}/>
-          
-          <Card.Body>
-            <Card.Title className={stylesCards.customTitle}>{title}</Card.Title>
-            <Card.Text className={stylesCards.customCardText}>
-              {text}
-            </Card.Text>
-            <Button variant="primary" className={stylesCards.customButton}>{buttonText}</Button>
-          </Card.Body>
-      </Card>
-    );
-  }*/
+import imgCard from '../../assets/images/ImagesHeader/BandejaPaisa.png';
 
   function Cards() {
     // Datos de prueba
