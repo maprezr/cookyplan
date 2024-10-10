@@ -1,17 +1,17 @@
 // Header.js
 import 'react';
-import { Navbar, Nav, Container, Form, Button } from 'react-bootstrap';
+import { Navbar, Nav, Form, Button } from 'react-bootstrap';
 import logo from '../../assets/images/imagesHeader/logo.png';
 import icono_inicio from '../../assets/images/imagesHeader/inicio.svg';
 import icono_contacto from '../../assets/images/imagesHeader/contactos.svg';
 import icono_servicios from '../../assets/images/imagesHeader/servicios.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Header/Header_y_Login.css';
+import stylesHeaderyLogin from '../Header/HeaderyLogin.module.css';
 
 function Header() {
   return (
     <div>    
-      <Navbar expand="lg" variant="dark" className="navbarHeader fixed-top">
+      <Navbar expand="lg" variant="dark" className={`${stylesHeaderyLogin.navbarHeader} fixed-top`}>
         <Navbar.Brand href="#">
           <img
             src={logo}
@@ -21,9 +21,9 @@ function Header() {
             alt="Logo"
           />
         </Navbar.Brand>
-          <span className='slogan-text'>• Sabores que inspiran, momentos que recuerdan •</span>
+          <span className={stylesHeaderyLogin.sloganText}>• Sabores que inspiran, momentos que recuerdan •</span>
       </Navbar>
-      <div className="horizontal-menu">
+      <div className={stylesHeaderyLogin.horizontalMenu}>
         <Nav>
           <Nav.Link href="#">
             <img src={icono_inicio} width="20" height="20" alt="Inicio" />

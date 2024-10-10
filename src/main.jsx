@@ -4,9 +4,9 @@ import './index.css'
 import { Layout } from './components/Layout/Layout.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import MyLogin from './components/Login/Login.jsx';
 import { DailyRecipe } from './components/DailyRecipe/DailyRecipe.jsx';
-
+import FormRecipe from './components/FormRecipe/RecipeForm.jsx';
+import Cards from './components/Cards/Cards.jsx';
 
 const router = createBrowserRouter([
   {
@@ -14,8 +14,12 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "login",
-        element: <MyLogin />,
+        path: "FormRecipe",
+        element: <FormRecipe />,
+      },
+      {
+        path: "Cards",
+        element: <Cards />,
       },
       {
         path: "main",

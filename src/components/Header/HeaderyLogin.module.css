@@ -16,7 +16,7 @@ body {
 
 /***********************************************************************/
 /*texto eslogan*/
-.slogan-text {
+.sloganText {
   position: absolute;
   padding: 20px 0;
   margin-left: 90px;
@@ -37,35 +37,35 @@ body {
 
 .buttonLogin, .buttonCarritoCompra{
   position: absolute;
-  top: 60px;
+  top: 40px;
   right: 70px;
 }
 
 .buttonCarritoCompra{
   right: 12px;
 }
-/**********************************************************************/
 
-.horizontal-menu{
+/**********************************************************************/
+.horizontalMenu{
   display: flex;
   background-color: #000000; /* Fondo de la sección horizontal */
   margin: 0; /* Eliminar márgenes predeterminados */
   padding: 10px 0;
   width: 100%; /* Asegura que ocupe todo el ancho de la página */
   position: fixed; /* Fija la barra horizontal */
-  top: 115px; /* Ajusta la posición para que esté justo debajo de la barra de navegación fija */
+  top: 90px; /* Ajusta la posición para que esté justo debajo de la barra de navegación fija */
   left: 0; /* Asegura que la barra comience desde el borde izquierdo */
   z-index: 1030; /* Asegura que esté por encima del contenido */
 }
 
-.horizontal-menu .nav-link {
+.horizontalMenu .nav-link {
   margin: 0;
   color: #ffffff; /* Color del texto en la sección horizontal */
 }
-.horizontal-menu .nav-link img {
+
+.horizontalMenu .nav-link img {
   margin-right: 5px; /* Aumenta el espacio entre el icono y el texto */
 }
-
 
 .btnBuscar {
   display: flex;
@@ -73,8 +73,6 @@ body {
   position: absolute;
   right: 10px;
 }
-
-
 
 /************************************************************************/
 /* styles para el inicio de seccion */
