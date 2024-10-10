@@ -5,7 +5,7 @@ import icono_email from '../../assets/images/imagesHeader/envelope.svg';
 import icono_password from '../../assets/images/imagesHeader/lock.svg';
 import icono_users from '../../assets/images/imagesHeader/user.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Header/Header_y_Login.css'
+import stylesHeaderyLogin from '../Header/HeaderyLogin.module.css';
 import icono_carritoCompra from '../../assets/images/imagesHeader/carritoCompra.svg';
 
 
@@ -61,11 +61,11 @@ const MyLogin = () => {
 
     return (
         <div className="container">
-            <Navbar expand="sm" variant="dark" className="navbar-custom navbarLogin fixed-top">
+            <Navbar expand="sm" variant="dark" className={`${stylesHeaderyLogin.navbarLogin} navbar-custom fixed-top`}>
                 <Navbar.Brand href="#">
                     <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
                         <Navbar.Collapse className="justify-content-end">
-                            <Button variant="outline-primary" onClick={handleClick} className='buttonLogin' >
+                            <Button variant="outline-primary" onClick={handleClick} className={stylesHeaderyLogin.buttonLogin}>
                                 <img 
                                     src={icono_users} 
                                     width="20"
@@ -75,7 +75,7 @@ const MyLogin = () => {
                                  />
                             </Button>
         
-                            <Button variant="outline-primary" onClick={handleClick} className='buttonCarritoCompra'>
+                            <Button variant="outline-primary" onClick={handleClick} className={stylesHeaderyLogin.buttonCarritoCompra}>
                                 <img 
                                     src={icono_carritoCompra} 
                                     width="20"
@@ -95,19 +95,6 @@ const MyLogin = () => {
                 <Modal.Body>
                     {!isRegistering ? (
                         <Form onSubmit={handleLoginSubmit} ref={formLoginRef}>
-                            {/*
-                            <FloatingLabel 
-                                controlId="formBasicEmail" 
-                                label={
-                                    <>
-                                      <img src={icono_email} alt="correo electrónico" style={{ marginRight: '8px' }} />
-                                      Correo electrónico
-                                    </> } 
-                                className="mb-3"
-                            >
-                                <Form.Control type="email" placeholder="name@example.com" required />
-                            </FloatingLabel>
-                            */}
                             
                             {/* para validar */}
                             <Form.Floating className="mb-3">
