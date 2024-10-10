@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* El contenedor ocupa al menos la altura del viewport */
+  }
+  
+  main {
+    flex: 1; /* Esto hace que el contenido principal ocupe todo el espacio restante */
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  } 

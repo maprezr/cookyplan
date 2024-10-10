@@ -1,15 +1,19 @@
 import React from 'react'
 import Header from '../Header/Header'
 import { Outlet } from 'react-router-dom'
+import MyLogin from '../Login/Login'
+import { Footer } from '../Footer/Footer'
+
 
 export const Layout = () => {
   return (
     <>
       <Header />
-      <div id="detail" class='mt-5'>
+      <MyLogin />
+      <div id="detail" class='m-5 card'>
         <Outlet />
       </div>
-      <h3>Este es un footer</h3>
+      <Footer />
     </>
   )
 }

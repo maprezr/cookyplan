@@ -5,7 +5,13 @@ border: 1px, solid !important;
 }
 
 .img{
-    border: 3px, solid !important;
+    border: 1px, solid !important;
     border-radius: 20px;
-
+    max-height: 600px;
+}
+.carousel_custom{
+    width: 50% !important;
+}
+.caption{
+    color: antiquewhite;
 }
