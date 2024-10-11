@@ -1,12 +1,12 @@
 import 'react';
 import { useState, useRef } from 'react';
 import { Button, Form, Modal, Navbar } from 'react-bootstrap';
-import icono_email from '../../assets/images/imagesHeader/envelope.svg';
-import icono_password from '../../assets/images/imagesHeader/lock.svg';
-import icono_users from '../../assets/images/imagesHeader/user.svg';
+import icono_email from '../../assets/images/ImagesHeader/envelope.svg';
+import icono_password from '../../assets/images/ImagesHeader/lock.svg';
+import icono_users from '../../assets/images/ImagesHeader/user.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import stylesHeaderyLogin from '../Header/HeaderyLogin.module.css';
-import icono_carritoCompra from '../../assets/images/imagesHeader/carritoCompra.svg';
+import icono_carritoCompra from '../../assets/images/ImagesHeader/carritoCompra.svg';
 
 
 const MyLogin = () => {
