@@ -1,12 +1,12 @@
 body {
-    background-color: #CFDEFF;; /* Fondo de la página */
+    background-color: #f1f1f1;; /* Fondo de la página */
     margin: 0; /* Eliminar márgenes predeterminados */
     padding-top: 150px; /* Espacio para la barra de navegación fija */
     padding-bottom: 100px; /* Espacio para la barra de navegación fija en la parte inferior */
 }
   
 .navbarHeader {
-  background-color: #CFDEFF;; /* Color de fondo de la barra de navegación */
+  background-color: #f1f1f1;; /* Color de fondo de la barra de navegación */
 }
 
 .navbarHeader .navbar-brand{

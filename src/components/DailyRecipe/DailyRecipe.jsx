@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import style from '../DailyRecipe/dailyRecipe.module.css';
+import { Card, Col, Row } from 'react-bootstrap';
 
 
 export const DailyRecipe = (recipes) => {
@@ -9,15 +10,21 @@ export const DailyRecipe = (recipes) => {
             <Carousel data-bs-theme="dark" className={style.carousel_custom}>
                 {recipes.recipes.map((recipe, index) => (
                     <Carousel.Item key={index}>
-                        <img
-                            className={`d-block w-100 ${style.img}`}
-                            src={recipe.image}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption className={`${style.caption}`}>
-                            <h5>{recipe.title}</h5>
-                            <p>{recipe.description}</p>
-                        </Carousel.Caption>
+                        <Card>
+                            <Row>
+                                <Col xs={6}>
+                                    <img
+                                        className={`d-block w-100 ${style.img}`}
+                                        src={recipe.image}
+                                        alt="First slide"
+                                    />
+                                </Col>
+                                <Col xs={6} className={`${style.caption}`}>
+                                    <h5>{recipe.title}</h5>
+                                    <p>{recipe.description}</p>
+                                </Col>
+                            </Row>
+                        </Card>
                     </Carousel.Item>
                 ))}
             </Carousel>
