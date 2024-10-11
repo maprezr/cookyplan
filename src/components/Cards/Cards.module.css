@@ -1,6 +1,9 @@
+
 /* CardStyles.css */
 .container {
   padding: 10px;
+  display: inline;
+  align-self: center;
 }
 
 .cardRow {
@@ -18,21 +21,19 @@
 
 .customCard {
     width: 19rem;
-    font-family: "Papyrus";
+    font-family: Helvetica,Arial, sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    background-color: #14213d;   
-    align-items: center; /* Centra el contenido horizontalmente */
+    background-color: #ffffff;   
+    padding: 0 1% 0 1%;
+    /* align-items: center; Centra el contenido horizontalmente */
 }
 
 
-/***********************************************/
-.customCard_img {
-  object-fit: contain;
-  height: 150px;
-  margin: 15px 0 10px 0;
+.imgContainer {  
+  display: inline-table;
+  align-self: center;
 }
-
 /***********************************************/
 .customButton {
   background-color: #14213d;
@@ -44,53 +45,31 @@
 
 /***********************************************/
 .customTitle{
-  text-align: center;
-  color: rgb(237, 237, 151);
-  text-shadow:
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px #fff,
-    0 0 60px rgb(255, 226, 4),
-    0 0 80px rgb(255, 226, 4),
-    0 0 100px rgb(255, 226, 4),
-    0 0 120px rgb(255, 226, 4),
-    0 0 140px rgb(255, 226, 4);
+  text-align: left;
+  font-weight: bold;
+  align-items: left;
+  padding-top: 5%;
+  padding-left:10%;
+  color: rgb(0, 0, 0);  
 }
 
 /***********************************************/
-.notranslate {
-  translate: no;
+.customCard_img {   
+  max-width: 200px;
+  min-height: 120px;  
+  border-radius: 8%/12%; 
 }
-
-.customHeader span{
-  font-size: 18px;
-  padding: 0 5px;
-  text-transform: uppercase;
-  color: #fff;
-  animation: zoomup 2s linear infinite;
-  animation-delay: calc(200ms * var(--i));
-}
-
-@keyframes zoomup {
-  0%,
-  100% {
-    color: #FFE204;
-    filter: blur(1px);
-    text-shadow: 0 0 40px #FFE204, 0 0 80px #FFE204, 0 0 120px #FFE204,
-      0 0 160px #FFE204, 0 0 200px #FFE204, 0 0 240px #FFE204, 0 0 280px #FFE204,
-      0 0 320px #FFE204, 0 0 360px #FFE204, 0 0 400px #FFE204;
-  }
-
-  5%,
-  95% {
-    filter: blur(0);
-    color: #fff;
-    text-shadow: none;
-  }
-}
-/***********************************************/
 
 .customCardText{
-  color: white;
-  text-align: justify;
+  padding: 5% 0 9% 0;
+  color: rgb(0, 0, 0);
+  text-align: justify;  
+}
+
+.customBody{
+  padding: 5% 10% 0 10%
+}
+
+.star{
+  align-self:center
 }

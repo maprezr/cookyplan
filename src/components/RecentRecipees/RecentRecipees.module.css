@@ -1,0 +1,13 @@
+.title{
+    text-align: center;
+    margin-bottom: 5%;    
+}
+
+.cardsList {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    justify-content: center;
+    gap: 20px;
+  }
