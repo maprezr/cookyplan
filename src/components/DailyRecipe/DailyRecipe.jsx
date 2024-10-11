@@ -10,7 +10,7 @@ export const DailyRecipe = (recipes) => {
             <Carousel data-bs-theme="dark" className={style.carousel_custom}>
                 {recipes.recipes.map((recipe, index) => (
                     <Carousel.Item key={index}>
-                        <Card>
+                        {/* <Card>
                             <Row>
                                 <Col xs={6}>
                                     <img
@@ -24,6 +24,15 @@ export const DailyRecipe = (recipes) => {
                                     <p>{recipe.description}</p>
                                 </Col>
                             </Row>
+                        </Card> */}
+                        <Card className={`pb-5 ${style.custom_card}`}>
+                            <Card.Img variant="top" src={recipe.image} className= {style.img}/>
+                            <Card.Body>
+                                <Card.Text className={style.description}>
+                                    <h3>{recipe.title}</h3>
+                                    {recipe.description}
+                                </Card.Text>
+                            </Card.Body>
                         </Card>
                     </Carousel.Item>
                 ))}
@@ -31,3 +40,5 @@ export const DailyRecipe = (recipes) => {
         </div>
     );
 }
+
+
