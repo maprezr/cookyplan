@@ -1,70 +1,69 @@
 body {
-    background-color: #f1f1f1;; /* Fondo de la página */
-    margin: 0; /* Eliminar márgenes predeterminados */
-    padding-top: 150px; /* Espacio para la barra de navegación fija */
-    padding-bottom: 100px; /* Espacio para la barra de navegación fija en la parte inferior */
-}
-  
-.navbarHeader {
-  background-color: #f1f1f1;; /* Color de fondo de la barra de navegación */
+  background-color: #f8f9fa; /* Fondo más claro */
+  margin: 0;
+  padding-top: 150px; /* Espacio para el Navbar fijo */
+  padding-bottom: 100px;
 }
 
-.navbarHeader .navbar-brand{
+.navbarHeader {
+  background-color: #ff914d; /* Color cálido y atractivo */
+  padding: 10px 0;
+}
+
+.navbarHeader .navbar-brand {
   padding: 20px 0;
   margin-left: 10px;
 }
 
-/***********************************************************************/
-/*texto eslogan*/
 .sloganText {
-  position: absolute;
-  padding: 20px 0;
+  color: #ffffff; /* Color blanco para destacar sobre el fondo cálido */
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
   margin-left: 90px;
-
-  color: #000000; /* Color del texto del eslogan */
-  font-size: 14px; /* Tamaño de fuente del eslogan */
-  font-style: italic; /* Estilo de fuente en cursiva */
-  font-weight: bold; /* Hace que el texto sea negrilla */
-  margin-top: 3%; /* Baja la línea del texto */
-  display: inline-block; /* Asegura que el margen superior se aplique correctamente */
+  margin-top: 3%; /* Ajustado para mantener su posición original */
+  display: inline-block;
 }
 
-/***********************************************************************/
 .navbarLogin {
   display: flex;
   justify-content: flex-end;
 }
 
-.buttonLogin, .buttonCarritoCompra{
+.buttonLogin, .buttonCarritoCompra {
   position: absolute;
   top: 40px;
+}
+
+.buttonLogin {
   right: 70px;
 }
 
-.buttonCarritoCompra{
+.buttonCarritoCompra {
   right: 12px;
 }
 
-/**********************************************************************/
-.horizontalMenu{
+.horizontalMenu {
   display: flex;
-  background-color: #000000; /* Fondo de la sección horizontal */
-  margin: 0; /* Eliminar márgenes predeterminados */
+  justify-content: flex-start; /* Alinea los elementos del menú a la izquierda */
+  background-color: #343a40; /* Fondo oscuro */
+  margin: 0;
   padding: 10px 0;
-  width: 100%; /* Asegura que ocupe todo el ancho de la página */
-  position: fixed; /* Fija la barra horizontal */
-  top: 90px; /* Ajusta la posición para que esté justo debajo de la barra de navegación fija */
-  left: 0; /* Asegura que la barra comience desde el borde izquierdo */
-  z-index: 1030; /* Asegura que esté por encima del contenido */
+  position: fixed;
+  top: 90px;
+  width: 100%;
+  left: 0;
+  z-index: 1030;
 }
 
+
 .horizontalMenu .nav-link {
-  margin: 0;
   color: #ffffff; /* Color del texto en la sección horizontal */
+  margin: 0 15px; /* Espaciado entre los elementos */
 }
 
 .horizontalMenu .nav-link img {
-  margin-right: 5px; /* Aumenta el espacio entre el icono y el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
 }
 
 .btnBuscar {
@@ -74,8 +73,6 @@ body {
   right: 10px;
 }
 
-/************************************************************************/
-/* styles para el inicio de seccion */
 .floating-label {
   display: flex;
   align-items: center;
@@ -96,4 +93,3 @@ body {
   border: 2px solid #007bff;
   border-radius: 5px;
 }
-
