@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import stylesCards from '../Cards/Cards.module.css';
+import stylesCards from '../Cards/cards.module.css';
 import star from '../../assets/images/RecentRecipees/star.png'
 
   function Cards(props) {    

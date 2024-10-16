@@ -1,24 +1,27 @@
+.carousel_custom {
+    max-width: 800px; /* Ancho máximo del carrusel */
+    margin: auto; /* Centrar el carrusel */
+    padding-top: 0px; /* Agregar padding superior para que no traslape con otro componente*/
+}
+
 .custom_card {
-    width: auto;
-    height: 500px;
-    
+    border: none; /* Sin borde para las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta el desbordamiento */
 }
 
 .img {
-    height: 300px;
-    width: auto;
+    height: 400px; /* Altura de las imágenes */
+    object-fit: cover; /* Mantiene la relación de aspecto */
 }
 
-.carousel_custom {
-    width: 70% !important;
+.title {
+    font-size: 1.5rem; /* Tamaño de la fuente del título */
+    font-weight: bold; /* Fuente en negrita */
+    margin-bottom: 10px; /* Espaciado debajo del título */
 }
 
-.caption {
-    color: rgb(0, 0, 0);
-    background-color: white;
-}
-
-.description{
-    height: 100px;
-    
+.description {
+    font-size: 1rem; /* Tamaño de la fuente de la descripción */
+    color: #6c757d; /* Color gris para la descripción */
 }
