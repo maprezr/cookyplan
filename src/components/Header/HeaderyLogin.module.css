@@ -7,7 +7,10 @@ body {
 
 .navbarHeader {
   background-color: #ff914d; /* Color cálido y atractivo */
-  padding: 10px 0;
+}
+
+.navbarHeader img{
+  margin-left: 10px;
 }
 
 .navbarHeader .navbar-brand {
@@ -16,11 +19,14 @@ body {
 }
 
 .sloganText {
-  color: #ffffff; /* Color blanco para destacar sobre el fondo cálido */
+  position: absolute;
+  padding: 20px 0;
+
+  color: #000000; /* Color blanco para destacar sobre el fondo cálido */
   font-size: 14px;
   font-style: italic;
   font-weight: bold;
-  margin-left: 90px;
+  margin-left: 100px;
   margin-top: 3%; /* Ajustado para mantener su posición original */
   display: inline-block;
 }
@@ -33,6 +39,7 @@ body {
 .buttonLogin, .buttonCarritoCompra {
   position: absolute;
   top: 40px;
+  border-color: #000000; /* Color del borde*/
 }
 
 .buttonLogin {
@@ -41,6 +48,12 @@ body {
 
 .buttonCarritoCompra {
   right: 12px;
+}
+
+.buttonLogin:hover, .buttonCarritoCompra:hover {
+  /*color: #FFA07A; /* Color del texto al pasar el ratón por encima */
+  border-color: #000000; /* Color del borde al pasar el ratón por encima */
+  background-color: #ffffff; /* Color de fondo al pasar el ratón por encima */
 }
 
 .horizontalMenu {
@@ -59,37 +72,44 @@ body {
 
 .horizontalMenu .nav-link {
   color: #ffffff; /* Color del texto en la sección horizontal */
-  margin: 0 15px; /* Espaciado entre los elementos */
+  margin: 0; /* Espaciado entre los elementos */
 }
 
 .horizontalMenu .nav-link img {
   margin-right: 5px; /* Espacio entre el ícono y el texto */
 }
 
-.btnBuscar {
-  display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  right: 10px;
+/* stylesHeaderyLogin.module.css */
+.navLink {
+  color: #ffffff; /* Color del texto */
 }
 
-.floating-label {
+.navLink:hover {
+  color: #007bff; /* Color del texto al pasar el cursor por encima */
+}
+
+.floating_label {
   display: flex;
   align-items: center;
 }
 
-.floating-label img {
+.floating_label img {
   margin-right: 8px;
   width: 20px;
   height: 20px;
 }
 
-.floating-label span {
+.floating_label span {
   font-weight: bold;
   color: #007bff;
 }
 
-.form-control-custom {
+.form_control_custom {
   border: 2px solid #007bff;
   border-radius: 5px;
+}
+
+/* Estilo para los campos de entrada cuando están enfocados y la información es incorrecta */
+input:focus:invalid {
+  border: 2px solid red;
 }

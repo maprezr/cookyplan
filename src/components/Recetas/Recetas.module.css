@@ -1,0 +1,81 @@
+/* stylesRecetas.module.css */
+.container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 3rem 0 1rem 0;
+}
+
+.cards_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Asegura que las cards se envuelvan si es necesario */
+  gap: 20px; /* Espacio entre las cards */
+}
+
+.customCard {
+  margin: 1rem; /* Centra las cards horizontalmente */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 300;
+  width: 300px; /* Ajusta el ancho máximo de las cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch; /* Asegura que todas las cards tengan la misma altura */
+  transition: transform 0.3s ease; /* Añade una transición suave */
+  cursor: pointer;
+}
+
+.customCard:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+.customTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.imgContainer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.customCard_img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.customBody {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  text-align: justify;
+  flex-grow: 1; /* Permite que el cuerpo de la card crezca */
+}
+
+.starContainer {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.customCardText {
+  font-size: 1rem;
+  color: #000;
+}

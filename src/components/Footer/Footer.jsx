@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import '../../components/Footer/footer.module.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Font Awesome
 
+
 export const Footer = () => {
   return (
     <footer className="footer bg-dark text-white mt-5">
