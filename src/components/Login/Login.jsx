@@ -102,10 +102,10 @@ const MyLogin = () => {
                                     id='floatingInputCustomLoginEmail'
                                     type='email'
                                     placeholder='name@example.com'
-                                    className="form-control-custom"
+                                    className={stylesHeaderyLogin.form_control_custom}
                                     required
                                 />
-                                <label htmlFor="floatingInputCustomLoginEmail" className="floating-label">
+                                <label htmlFor="floatingInputCustomLoginEmail" className={stylesHeaderyLogin.floating_label}>
                                       <img src={icono_email} alt="correo electrónico" />
                                       <span>Correo electrónico</span>
                                 </label>
@@ -116,10 +116,10 @@ const MyLogin = () => {
                                 id="floatingInputCustomLoginPassword"
                                 type="password"
                                 placeholder="Contraseña"
-                                className="form-control-custom"
+                                className={stylesHeaderyLogin.form_control_custom}
                                 required
                               />
-                              <label htmlFor="floatingInputCustomLoginPassword" className="floating-label">
+                              <label htmlFor="floatingInputCustomLoginPassword" className={stylesHeaderyLogin.floating_label}>
                                 <img src={icono_password} alt="contraseña" />
                                 <span>Contraseña</span>
                               </label>
@@ -144,10 +144,10 @@ const MyLogin = () => {
                                     id='floatingInputCustomRegisUsername'
                                     type='text'
                                     placeholder='Nombre de Usuario'
-                                    className="form-control-custom"
+                                    className={stylesHeaderyLogin.form_control_custom}
                                     required
                                 />
-                                <label htmlFor="floatingInputCustomRegisUsername" className="floating-label">
+                                <label htmlFor="floatingInputCustomRegisUsername" className={stylesHeaderyLogin.floating_label}>
                                       <img src={icono_users} alt="Username" />
                                       <span>Nombre de Usuario</span>
                                 </label>
@@ -158,10 +158,10 @@ const MyLogin = () => {
                                     id='floatingInputCustomRegisEmail'
                                     type='email'
                                     placeholder='name@example.com'
-                                    className="form-control-custom"
+                                    className={stylesHeaderyLogin.form_control_custom}
                                     required
                                 />
-                                <label htmlFor="floatingInputCustomRegisEmail" className="floating-label">
+                                <label htmlFor="floatingInputCustomRegisEmail" className={stylesHeaderyLogin.floating_label}>
                                       <img src={icono_email} alt="correo electrónico" />
                                       <span>Correo electrónico</span>
                                 </label>
@@ -172,10 +172,10 @@ const MyLogin = () => {
                                 id="floatingInputCustomRegisPassword"
                                 type="password"
                                 placeholder="Contraseña"
-                                className="form-control-custom"
+                                className={stylesHeaderyLogin.form_control_custom}
                                 required
                               />
-                              <label htmlFor="floatingInputCustomRegisPassword" className="floating-label">
+                              <label htmlFor="floatingInputCustomRegisPassword" className={stylesHeaderyLogin.floating_label}>
                                 <img src={icono_password} alt="contraseña" />
                                 <span>Contraseña</span>
                               </label>
