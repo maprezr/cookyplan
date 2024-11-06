@@ -10,7 +10,7 @@ const Recetas = () => {
       <h2 className={stylesRecetas.title}>Recetas</h2>
       <div className={stylesRecetas.cards_container}>
         {recipes.map((cardData, index) => (            
-          <Card key={cardData.id} card={cardData} />
+          <Card key={index} card={cardData} />
         ))}
       </div>
     </div>
