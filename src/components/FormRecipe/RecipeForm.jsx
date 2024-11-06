@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from './recipeForm.module.css'; // Importa los estilos
+import styles from './RecipeForm.module.css'; // Importa los estilos
 
 const RecipeForm = () => {
   // Estado inicial del formulario con los campos de la receta

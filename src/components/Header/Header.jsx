@@ -5,7 +5,7 @@ import icono_inicio from '../../assets/images/ImagesHeader/inicio.svg';
 import icono_recetas from '../../assets/images/ImagesHeader/recetas.svg';
 import icono_servicios from '../../assets/images/ImagesHeader/servicios.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import stylesHeaderyLogin from '../Header/headeryLogin.module.css';
+import stylesHeaderyLogin from '../Header/HeaderyLogin.module.css';
 import { Link } from 'react-router-dom';
 
 function Header() {

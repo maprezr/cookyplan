@@ -1,7 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import stylesCards from '../Cards/cards.module.css';
+import stylesCards from '../Cards/Cards.module.css';
 import star from '../../assets/images/RecentRecipees/star.png'
+import StarRating from '../StarRating/StarRating';
 
   function Cards(props) {    
     const cardData = props.card;   
@@ -19,8 +20,9 @@ import star from '../../assets/images/RecentRecipees/star.png'
         </div>
         <Card.Body className={stylesCards.customBody}>
           <div className='star'>
-          <img src={star} className='star'/>
-            {props.card.rating}
+            <StarRating rate={props.card.rating}></StarRating>
+          {/* <img src={star} className='star'/>
+            {props.card.rating} */}
           </div>        
           <Card.Text className={stylesCards.customCardText}>
             
