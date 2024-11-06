@@ -16,7 +16,7 @@ export default [
             "author": "",
             "author_profile":"",
             "recepee_url":"",
-            "rating": 4
+            "rating": 5
         },
         {
             "id":2,
@@ -26,6 +26,6 @@ export default [
             "author": "",
             "author_profile":"",
             "recepee_url":"",
-            "rating": 3
+            "rating": 4
         }    
 ]
